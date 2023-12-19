@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charaset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://kit.fontawesome.com/38eb5f35af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav> 
+        <img src="images/log.png" class="logo">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <style>
+                    body{
+                      background-image: url("./images/back5.png");
+                    }
+                </style>
+    </nav>
+<!--------------------portfolio------------------>
+ <div id="portfolio">
+        <div class="container">
+             <h1 class="sub-title">ISHITA'S WORK</h1>
+             <div class="work-list">
+                 <div class="work">
+                    <img src="images/ishi (1).jpg">
+                    <div class="layer">
+                        <h3> Myntra </h3>
+                        <p>Get Your Daily Dose of Fashion from Ishita Khanna</p>
+                        <a href="https://www.myntra.com/studio/influencer/1d8d66c1.939a.4ac6.a6b8.73dbcc1de9d0g0410qkloq/ishita-khanna?appRoute=%7B%22url%22%3A%22%2Fstudio%2Finfluencer%2F1d8d66c1.939a.4ac6.a6b8.73dbcc1de9d0g0410qkloq%2Fishita-khanna%22%7D"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/ishi (4).jpg">
+                    <div class="layer">
+                        <h3> The Talented Indian</h3>
+                        <p> An Interview with Ishita Khanna, a YouTuber and digital creator, who brings her viewers the best of fashion and lifestyle tips. </p>
+                        <a href="https://www.thetalentedindian.com/fashion-lifestyle-and-styling-meet-the-youtuber-ishita-khanna/"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <img src="images/ishi (6).jpg">
+                    <div class="layer">
+                        <h3> a TEDx Connaught Place talk</h3>
+                        <p> Money as a means to an end: a TEDx Connaught Place talk by Ishita Khanna on Ecosphere's work in Spiti</p>
+                        <a href="https://www.indiawaterportal.org/articles/money-means-end-tedx-connaught-place-talk-ishita-khanna-ecospheres-work-spiti"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                 </div>
+             </div>
+             <a href="https://www.youtube.com/@IshitaKhanna" class="btn">SEE MORE</a>
+        </div>
+    </div>
+    <script>
+    
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-1ink");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-1ink");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    </body>
+    </html>

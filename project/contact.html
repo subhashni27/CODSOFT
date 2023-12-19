@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charaset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://kit.fontawesome.com/38eb5f35af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav> 
+        <img src="images/log.png" class="logo">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <style>
+                    body{
+                      background-image: url("./images/back5.png");
+                    }
+                </style>
+    </nav>
+
+<!----------------contact----------->
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">CONTACT <span>ISHITA</span></h1>
+            <p><i class="fa-regular fa-paper-plane"></i> ishita.khanna@hotmail.com</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ishitakhanna1793/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/ishitakhanna?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/ishitakhannaofficial/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ishita-khanna-6159b3136/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+        </div>
+         <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">SUBMIT</button>
+            </form>
+            <span id="msg"></span>
+         </div>
+       </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> SUHA. Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-1ink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-1ink");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/a/macros/citchennai.net/s/AKfycbxARnlCg1DVC_A2JyQjDRExfZSGvbQx4thYncNjWvNgB65SOJ44a5AtU0vUoRWgrhmd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

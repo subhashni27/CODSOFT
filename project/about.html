@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charaset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://kit.fontawesome.com/38eb5f35af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav> 
+        <img src="images/log.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <style>
+                    body{
+                      background-image: url("./images/back.png");
+                    }
+                </style>
+    </nav>
+<!--- -----------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/ishita.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About ISHITA</h1>
+                <p>Popular for her relatable fashion and girl-next-door personality, Ishita Khanna has paved her own niche in the fast-paced digital space. 
+                    Her knack to connect with the audience through the camera has resulted in her immense social media presence.
+                    From being an Economics graduate to a UPSC aspirant to pursuing her passion and becoming a full-time content creator, 
+                    Ishita has been a believer of hard work and hustle. Be it Fashion, Beauty, Travel or Lifestyle, 
+                    she strives to be both honest and entertaining in the content she meticulously crafts. </p>                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Youtube Creator</span><br>Full-Time Youtube Creator</li>
+                        <li><span>Freelancing</span><br>Full-Time work as a Social Media Manager</li>
+                        <li><span>Indian Content Creator</span><br>Fashion,Lifestyle and Styling</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jul 2019 - Present</span><br>YouTube Creator</li>
+                        <li><span>Nov 2019 - Nov 2020</span><br>Social Media Manager at Good Times</li>
+                        <li><span>Aug 2018 - Oct 2019</span><br>Senior Content Creator at MUSEBRIDGE SYSTEMS PRIVATE LIMITED</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2003 - 2011</span><br>Welham Girls School, Dehradun</li>
+                        <li><span>2011 - 2014</span><br>St. Xavier's College<br>Bachelor of Arts - BA</li>
+                        <li><span>2014 - 2017</span><br>Gokhale Institute of Politics and Economics <br>Master's degree - Economics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-1ink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-1ink");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
