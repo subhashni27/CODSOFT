@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: o;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar start */
+
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: wheat;
+    text-shadow: 0px 1px 1px ;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #915e01;
+}
+.navbar-toggler span{
+    color: #915e01;
+}
+.navbar-nav{
+    margin-left: 0px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item    .nav-link:hover{
+    background: #915e01;
+    color: white;
+}
+#navbar form button{
+    background: #915e01;
+    color: white;
+    border: none;
+}
+/* Navbar start */
+
+
+/*homesection starts*/
+.home{
+    width: 100%;
+    height: 99vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(img/coffee.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: wheat;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #915e01;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"DOPPIO";}
+    10%{content:"Macchiato";}
+    20%{content:"Con Panna";}
+    30%{content:"Cortado";}
+    40%{content:"Cappuccino";}
+    50%{content:"Hot Chocolate";}
+    60%{content:"Americano";}
+    70%{content:"Latte";}
+    80%{content:"Latte + FLAVOR";}
+    90%{content:"Mocha";}
+    100%{content:"Chai Latte";} 
+    110%{content:"Tea";}
+
+
+}
+
+.home .content p{
+    color: wheat;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: black;
+    color: wheat;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #915e01;
+    color: wheat;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/*homesection ends*/
+
+/*section register starts*/
+.register{
+    background: black;
+    padding: 50px;
+}
+.main-text h1{
+    color: wheat;
+    text-align: center;
+    text-shadow: 0px 1px 1px ;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #915e01;
+}
+.register .card{
+    border-radius: 10px;
+    
+}
+.register .row{
+    margin-top: 30px;
+}
+.register form input{
+padding: 10px;
+color: black;
+border: none;
+outline: none;
+font-size: 15px;
+border-radius: 10px;
+box-shadow: 0px 5px 5px -6px ;
+}
+.register form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px white;
+    height: 200px;
+}
+.register .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #915e01;
+    color: wheat;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.register .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .register{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/*section register starts*/
+
+
+
+
+/*section products starts*/
+.products{
+    cursor: pointer;
+    background: black;
+    padding: 50px;
+}
+.main-txt h1{
+    color: wheat;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #915e01;
+}
+.products .card{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px wheat;
+}
+.products .card img{
+    border-radius: 5px;
+}
+.products .card .card-body{
+    cursor: pointer;
+    background: black;
+}
+.products .card .card-body h3{
+    text-align: center;
+    color: wheat;
+    font-size: 25px;
+    font-weight: 600;
+}
+.products .card .card-body p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.checked{
+    text-align: center;
+    color: #ffa500;
+}
+.checked {
+    text-align: center;
+    color: orange;
+  }
+.star i{
+    text-align: center;
+    font-size: 15px;
+}
+.products .card .card-body h6{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.products .card .card-body a{
+    text-align: center;
+    line-height: 3;
+    padding: 10px;
+    text-decoration: none;
+    background: #915e01;
+    color: wheat;
+    border-radius: 5px;
+}
+/*section products starts*/
+
+
+
+/*section services starts*/
+.services{
+    background: black;
+    padding: 70px;
+}
+.services .main-txt{
+    color: wheat;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;    
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #915e01;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+
+/*section services ends*/
+
+
+/*section gallery starts*/
+.gallery{
+    background: black;
+    padding: 50px;
+}
+.gallery .main-txt{
+    color: wheat;
+}
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+
+/*section gallery starts*/
+
+/*section about starts*/
+.about{
+    padding: 50px;
+    background: black;
+}
+.about .main-text{
+    color: wheat;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h3{
+    color: wheat;
+}
+.about h1{
+    color: wheat;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    color: white;
+    font-weight: 500;
+}
+#about-btn{
+    color: wheat;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #915e01;
+    color: #f9f9f9;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+/*section about starts*/
+
+/* footer starts*/
+#footer{
+    color: white;
+    width: 100%;
+    text-align: center;
+    background: black;
+}
+#footer h1{
+    color: wheat;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #915e01;
+}
+.footer .credit p{
+    color: white;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #915e01;
+}
+/* footer starts*/
